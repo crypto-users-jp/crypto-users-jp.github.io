@@ -1,0 +1,26 @@
+/** @file index.css
+ */
+
+@font-face {
+	font-family: 'VL-PGothic-Regular';
+	src: url('../fonts/VL-PGothic-Regular.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'GD-HighwayGothicJA';
+	src: url('../fonts/GDhwGoJA-TTF108b.ttf') format('truetype');
+}
+
+body {
+	font-family: 'VL-PGothic-Regular';
+}
+
+nav, h1 {
+	font-family: 'GD-HighwayGothicJA';
+}
+
+.tab-pane .page-header:first-child {
+	margin-top: 0px;
+}
+
+

@@ -6,23 +6,163 @@
 		<meta name="description" content="日本暗号通貨ユーザ会の公式ウェブサイトです。" />
 		<meta name="author" content="日本暗号通貨ユーザ会" />
 		<meta charset="UTF-8" />
+		<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="favicon.ico" />
 		
-		<!-- Load jQuery -->
-		<script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/index.css">
 		
-		<!-- Latest compiled and minified CSS -->
-		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-		<!-- Latest compiled and minified JavaScript -->
-		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+		<script src="js/jquery-2.1.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/index.js"></script>
 		
-		<title>ホーム | 日本暗号通貨ユーザ会</title>
+		<title>日本暗号通貨ユーザ会</title>
 		
 	</head>
 	<body>
 		
-		<h1>日本暗号通貨ユーザ会</h1>
+		<!-- Navigation bar. -->
+		<nav class="navbar navbar-default" role="navigation">
+			<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-menu">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-inner" href="#home" data-toggle="tab">
+						<img src="img/navbar-brand.png" alt="日本暗号通貨ユーザ会" style="height:40px;margin:10px 20px 10px 10px;" />
+					</a>
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="navbar-menu">
+					<ul class="nav navbar-nav">
+						<li><a href="#document"  data-toggle="tab"><span class="glyphicon glyphicon-paperclip"></span> ドキュメント</a></li>
+						<li><a href="#community" data-toggle="tab"><span class="glyphicon glyphicon-comment"></span> コミュニティ</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li class="dropdown">
+							<a href="#" class="dropdow-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-info-sign"></span> その他 <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="#member" data-toggle="tab"><span class="glyphicon glyphicon-user"></span> メンバー</a></li>
+								<li><a href="#contact" data-toggle="tab"><span class="glyphicon glyphicon-envelope"></span> コンタクト</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div><!-- /.container-fluid -->
+		</nav>
 		
-		<p>準備中。。。</p>
+		<div class="container"><div class="row"><div class="col-lg-12">
+			
+			<div class="tab-content">
+				
+				<!--++++++++++++++++++++++++++++++++++++++++++++++++++
+				++++ HOME
+				++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+				<div class="tab-pane fade active" id="home">
+					<div class="jumbotron">
+						<div class="text-center" style="margin-bottom:50px;">
+							<img src="img/crypto-users-logo-square.png" alt="Japan Crypto Currency User Group Logo" style="max-width:100%;" />
+						</div>
+						<p>「日本暗号通貨ユーザ会」は、暗号通貨（ビットコイン・モナーコイン等）を扱うデベロッパーのためのコミュニティです。</p>
+					</div>
+				</div><!-- .home -->
+				
+				<!--++++++++++++++++++++++++++++++++++++++++++++++++++
+				++++ DOCUMENT
+				++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+				<div class="tab-pane fade" id="document">
+					<div class="page-header">
+						<h1>ドキュメント</h1>
+					</div>
+					<div class="page-header">
+						<h2>Wiki</h2>
+						<p>準備中。。。</p>
+					</div>
+				</div><!-- .document -->
+				
+				<!--++++++++++++++++++++++++++++++++++++++++++++++++++
+				++++ COMMUNITY
+				++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+				<div class="tab-pane fade" id="community">
+					<div class="page-header">
+						<h1>コミュニティ</h1>
+					</div>
+					<p>暗号通貨の基礎技術（ブロックチェーン、公開鍵暗号など）、その応用方法（ethereum、各種BIPなど）、暗号通貨を使ったサービスや既存のサービスへの統合方法など、暗号通貨の技術面での議論をできる様々な場を提供しております。</p>
+					<div class="page-header">
+						<h2>メーリングリスト</h2>
+						<p>現在開設されているメーリングリストの一覧です。</p>
+						<p>メーリングリストに参加する場合には、リンク先から登録をお願いします。</p>
+						<table class="table table-hover table-bordered" style="max-width:300px;">
+							<thead>
+								<tr><th>名前</th><th>内容</th></tr>
+							</thead>
+							<tbody>
+								<tr><td><a href="http://lists.crypto-users.jp/listinfo/discuss" class="link-new-window">discuss</a></td><td>一般的な議論</td></tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="page-header">
+						<h2>IRC</h2>
+						<table class="table table-hover table-bordered" style="max-width:300px;">
+							<tbody>
+								<tr><th>サーバ</th><td>irc.freenode.net</td></tr>
+								<tr><th>ルーム</th><td>#crypto-users-jp</td></tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="page-header">
+						<h2>フォーラム</h2>
+						<p>準備中。。。</p>
+					</div>
+				</div><!-- .community -->
+				
+				<!--++++++++++++++++++++++++++++++++++++++++++++++++++
+				++++ MEMBER
+				++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+				<div class="tab-pane fade" id="member">
+					<div class="page-header">
+						<h1>メンバー</h1>
+					</div>
+					<div class="page-header">
+						<h2>ウェブサイトコミッター</h2>
+					</div>
+					<p><a href="https://github.com/orgs/crypto-users-jp/people" class="link-new-window">こちら</a>をご覧ください。</p>
+					<div class="page-header">
+						<h2>メールサーバ管理</h2>
+					</div>
+					<p><a href="https://twitter.com/visvirial">@visvirial</a></p>
+				</div><!-- .member -->
+				
+				<!--++++++++++++++++++++++++++++++++++++++++++++++++++
+				++++ CONTACT
+				++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+				<div class="tab-pane fade" id="contact">
+					<div class="page-header">
+						<h1>コンタクト</h1>
+						<p>当グループにご用のある方は、下記メールアドレスまでご連絡ください。</p>
+						<p>※ "[MONA]" を "@" に置き換えてください</p>
+						<div class="well">
+							info [MONA] crypto-users.jp
+						</div>
+					</div>
+				</div><!-- .contact -->
+				
+			</div>
+			
+			<hr />
+			
+			<footer class="small" style="margin-bottom:5ex;">
+				<div>
+					Copyright &copy; 日本暗号通貨ユーザ会 2014.
+					All rights reserved.
+					<div class="pull-right">[ Hosted by <a href="https://pages.github.com/" class="link-new-window">GitHub Pages</a> | <a href="https://github.com/crypto-users-jp/crypto-users-jp.github.io" class="link-new-window">GitHub repository</a> ]</div>
+				</div>
+			</footer>
+			
+		</div></div></div>
 		
 	</body>
 </html>
